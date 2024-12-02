@@ -1,0 +1,743 @@
+<body data-theme="dark" cz-shortcut-listen="true" style="position: relative; min-height: 100%; top: 0px;">
+    <!-- Preloader -->
+    <div class="preloader" style="display: none">
+      <img src="/assets_inside/img/logo/loader.png" alt="loader" class="lds-ripple img-fluid">
+    </div>
+    <!-- Body Wrapper -->
+    <div class="page-wrapper mini-sidebar" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="mini-sidebar" data-sidebar-position="fixed" data-header-position="fixed">
+      <!-- Sidebar Start -->
+   <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div>
+          <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="/user/dashboard/" class="text-nowrap logo-img">
+              <img src="/assets_inside/img/logo/light-logo.png" style="height: 30px" alt="Metro Trade">
+            </a>
+            <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+              <i class="ti ti-x fs-8"></i>
+            </div>
+          </div>
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav scroll-sidebar" data-simplebar="init">
+            <div class="simplebar-wrapper" style="margin: 0px -24px">
+              <div class="simplebar-height-auto-observer-wrapper">
+                <div class="simplebar-height-auto-observer"></div>
+              </div>
+              <div class="simplebar-mask">
+                <div class="simplebar-offset" style="right: 0px; bottom: 0px">
+                  <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll">
+                    <div class="simplebar-content" style="padding: 0px 24px">
+                      <ul id="sidebarnav">
+                        <!-- ============================= -->
+                        <!-- Home -->
+                        <!-- ============================= -->
+                        <li class="nav-small-cap">
+                          <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                          <span class="hide-menu">Home</span>
+                        </li>
+                        <!-- =================== -->
+                        <!-- Dashboard -->
+                        <!-- =================== -->
+                        <li class="sidebar-item active">
+                          <a class="sidebar-link" href="/user/dashboard/" aria-expanded="false">
+                            <span>
+                              <i class="ti ti-home-2"></i>
+                            </span>
+                            <span class="hide-menu">Dashboard</span>
+                          </a>
+                        </li>
+                        <li class="sidebar-item">
+                          <a class="sidebar-link" href="/user/deposit" aria-expanded="false">
+                            <span>
+                              <i class="ti ti-currency-dollar"></i>
+                            </span>
+                            <span class="hide-menu">Deposit</span>
+                          </a>
+                        </li>
+                        <li class="sidebar-item">
+                          <a class="sidebar-link" href="/user/investment-pricing/" aria-expanded="false">
+                            <span>
+                              <i class="ti ti-activity-heartbeat"></i>
+                            </span>
+                            <span class="hide-menu">Pricing</span>
+                          </a>
+                        </li>
+                        <!--<li class="sidebar-item">-->
+                        <!--  <a-->
+                        <!--    class="sidebar-link"-->
+                        <!--    href="/user/invest/"-->
+                        <!--    aria-expanded="false"-->
+                        <!--  >-->
+                        <!--    <span>-->
+                        <!--      <i class="ti ti-file-text"></i>-->
+                        <!--    </span>-->
+                        <!--    <span class="hide-menu">Create Investment</span>-->
+                        <!--  </a>-->
+                        <!--</li>-->
+                      
+                        <li class="sidebar-item">
+                          <a class="sidebar-link" href="/user/withdraw/" aria-expanded="false">
+                            <span>
+                              <i class="ti ti-shopping-cart"></i>
+                            </span>
+                            <span class="hide-menu">Withdraw</span>
+                          </a>
+                        </li>
+                        <li class="sidebar-item">
+                          <a class="sidebar-link has-arrow" href="#" aria-expanded="false">
+                            <span class="d-flex">
+                              <i class="ti ti-layout"></i>
+                            </span>
+                            <span class="hide-menu">Transactions</span>
+                          </a>
+                          <ul aria-expanded="false" class="collapse first-level">
+                            <li class="sidebar-item">
+                              <a href="/user/account-history/" class="sidebar-link">
+                                <div class="round-16 d-flex align-items-center justify-content-center">
+                                  <i class="ti ti-circle"></i>
+                                </div>
+                                <span class="hide-menu">Earnings</span>
+                              </a>
+                            </li>
+                            <li class="sidebar-item">
+                              <a href="/user/account-history-funding/" class="sidebar-link">
+                                <div class="round-16 d-flex align-items-center justify-content-center">
+                                  <i class="ti ti-circle"></i>
+                                </div>
+                                <span class="hide-menu">Deposits</span>
+                              </a>
+                            </li>
+                            <li class="sidebar-item">
+                              <a href="/user/account-history-withdraw/" class="sidebar-link">
+                                <div class="round-16 d-flex align-items-center justify-content-center">
+                                  <i class="ti ti-circle"></i>
+                                </div>
+                                <span class="hide-menu">Withdraw</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sidebar-item">
+                          <a class="sidebar-link" href="/user/referral/" aria-expanded="false">
+                            <span>
+                              <i class="ti ti-users"></i>
+                            </span>
+                            <span class="hide-menu">Affiliate</span>
+                          </a>
+                        </li>
+                        <!-- ============================= -->
+                        <!-- Apps -->
+                        <!-- ============================= -->
+                        <li class="nav-small-cap">
+                          <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                          <span class="hide-menu">User</span>
+                        </li>
+                        <li class="sidebar-item">
+                          <a class="sidebar-link" href="/user/profile-setting/" aria-expanded="false">
+                            <span>
+                              <i class="ti ti-user-circle"></i>
+                            </span>
+                            <span class="hide-menu">Profile</span>
+                          </a>
+                        </li>
+                        <li class="sidebar-item">
+                          <a class="sidebar-link" href="/user/twofactor/" aria-expanded="false">
+                            <span>
+                              <i class="ti ti-shield"></i>
+                            </span>
+                            <span class="hide-menu">Security</span>
+                          </a>
+                        </li>
+                        <li class="sidebar-item">
+                          <a class="sidebar-link" href="/ticket/open" aria-expanded="false">
+                            <span>
+                              <i class="ti ti-mail"></i>
+                            </span>
+                            <span class="hide-menu">Support</span>
+                          </a>
+                        </li>
+                        <li class="sidebar-item">
+                          <a class="sidebar-link" href="/user/logout/" aria-expanded="false">
+                            <span>
+                              <i class="ti ti-logout"></i>
+                            </span>
+                            <span class="hide-menu">Logout</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="simplebar-placeholder" style="width: auto; height: 688px"></div>
+            </div>
+            <div class="simplebar-track simplebar-horizontal" style="visibility: hidden">
+              <div class="simplebar-scrollbar" style="width: 0px; display: none"></div>
+            </div>
+            <div class="simplebar-track simplebar-vertical" style="visibility: visible">
+              <div class="simplebar-scrollbar" style="
+                  height: 323px;
+                  transform: translate3d(0px, 0px, 0px);
+                  display: block;
+                "></div>
+            </div>
+          </nav>
+        
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>      <!-- Sidebar End -->
+      <!-- Main wrapper -->
+      <div class="body-wrapper">
+        <!-- Header Start -->
+        <header class="app-header">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link sidebartoggler nav-icon-hover ms-n3" id="headerCollapse" href="javascript:void(0)">
+                  <i class="ti ti-menu-2"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav quick-links d-none d-lg-flex">
+              <li class="nav-item hover-dd d-none d-lg-block">
+                <a class="nav-link" href="/user/deposit/"> Deposit </a>
+              </li>
+              <li class="nav-item dropdown-hover d-none d-lg-block">
+                <a class="nav-link" href="/user/withdraw/">Withdraw</a>
+              </li>
+            </ul>
+            <div class="d-block d-lg-none">
+              <img src="/assets_inside/img/logo/light-logo.png" style="height: 30px" alt="">
+            </div>
+            <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="p-2">
+                <i class="ti ti-dots fs-7"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <div class="d-flex align-items-center justify-content-between">
+                <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+                  <li class="nav-item dropdown">
+                    <div id="google_translate_element" style="width: auto; padding: 0"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage" style="display: inline;"><select class="goog-te-combo" aria-label="Language Translate Widget"><option value="">Select Language</option><option value="ab">Abkhaz</option><option value="ace">Acehnese</option><option value="ach">Acholi</option><option value="aa">Afar</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="alz">Alur</option><option value="am">Amharic</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="as">Assamese</option><option value="av">Avar</option><option value="awa">Awadhi</option><option value="ay">Aymara</option><option value="az">Azerbaijani</option><option value="ban">Balinese</option><option value="bal">Baluchi</option><option value="bm">Bambara</option><option value="bci">Baoulé</option><option value="ba">Bashkir</option><option value="eu">Basque</option><option value="btx">Batak Karo</option><option value="bts">Batak Simalungun</option><option value="bbc">Batak Toba</option><option value="be">Belarusian</option><option value="bem">Bemba</option><option value="bn">Bengali</option><option value="bew">Betawi</option><option value="bho">Bhojpuri</option><option value="bik">Bikol</option><option value="bs">Bosnian</option><option value="br">Breton</option><option value="bg">Bulgarian</option><option value="bua">Buryat</option><option value="yue">Cantonese</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ch">Chamorro</option><option value="ce">Chechen</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="chk">Chuukese</option><option value="cv">Chuvash</option><option value="co">Corsican</option><option value="crh">Crimean Tatar (Cyrillic)</option><option value="crh-Latn">Crimean Tatar (Latin)</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="fa-AF">Dari</option><option value="dv">Dhivehi</option><option value="din">Dinka</option><option value="doi">Dogri</option><option value="dov">Dombe</option><option value="nl">Dutch</option><option value="dyu">Dyula</option><option value="dz">Dzongkha</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="ee">Ewe</option><option value="fo">Faroese</option><option value="fj">Fijian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fon">Fon</option><option value="fr">French</option><option value="fr-CA">French (Canada)</option><option value="fy">Frisian</option><option value="fur">Friulian</option><option value="ff">Fulani</option><option value="gaa">Ga</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gn">Guarani</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="cnh">Hakha Chin</option><option value="ha">Hausa</option><option value="haw">Hawaiian</option><option value="iw">Hebrew</option><option value="hil">Hiligaynon</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="hrx">Hunsrik</option><option value="iba">Iban</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="ilo">Ilocano</option><option value="id">Indonesian</option><option value="iu-Latn">Inuktut (Latin)</option><option value="iu">Inuktut (Syllabics)</option><option value="ga">Irish Gaelic</option><option value="it">Italian</option><option value="jam">Jamaican Patois</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kac">Jingpo</option><option value="kl">Kalaallisut</option><option value="kn">Kannada</option><option value="kr">Kanuri</option><option value="pam">Kapampangan</option><option value="kk">Kazakh</option><option value="kha">Khasi</option><option value="km">Khmer</option><option value="cgg">Kiga</option><option value="kg">Kikongo</option><option value="rw">Kinyarwanda</option><option value="ktu">Kituba</option><option value="trp">Kokborok</option><option value="kv">Komi</option><option value="gom">Konkani</option><option value="ko">Korean</option><option value="kri">Krio</option><option value="ku">Kurdish (Kurmanji)</option><option value="ckb">Kurdish (Sorani)</option><option value="ky">Kyrgyz</option><option value="lo">Lao</option><option value="ltg">Latgalian</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lij">Ligurian</option><option value="li">Limburgish</option><option value="ln">Lingala</option><option value="lt">Lithuanian</option><option value="lmo">Lombard</option><option value="lg">Luganda</option><option value="luo">Luo</option><option value="lb">Luxembourgish</option><option value="mk">Macedonian</option><option value="mad">Madurese</option><option value="mai">Maithili</option><option value="mak">Makassar</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ms-Arab">Malay (Jawi)</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mam">Mam</option><option value="gv">Manx</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mh">Marshallese</option><option value="mwr">Marwadi</option><option value="mfe">Mauritian Creole</option><option value="chm">Meadow Mari</option><option value="mni-Mtei">Meiteilon (Manipuri)</option><option value="min">Minang</option><option value="lus">Mizo</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="bm-Nkoo">N'Ko</option><option value="nhe">Nahuatl (Eastern Huasteca)</option><option value="ndc-ZW">Ndau</option><option value="nr">Ndebele (South)</option><option value="new">Nepal Bhasa (Newari)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="nus">Nuer</option><option value="oc">Occitan</option><option value="or">Odia (Oriya)</option><option value="om">Oromo</option><option value="os">Ossetian</option><option value="pag">Pangasinan</option><option value="pap">Papiamento</option><option value="ps">Pashto</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese (Brazil)</option><option value="pt-PT">Portuguese (Portugal)</option><option value="pa">Punjabi (Gurmukhi)</option><option value="pa-Arab">Punjabi (Shahmukhi)</option><option value="qu">Quechua</option><option value="kek">Qʼeqchiʼ</option><option value="rom">Romani</option><option value="ro">Romanian</option><option value="rn">Rundi</option><option value="ru">Russian</option><option value="se">Sami (North)</option><option value="sm">Samoan</option><option value="sg">Sango</option><option value="sa">Sanskrit</option><option value="sat-Latn">Santali (Latin)</option><option value="sat">Santali (Ol Chiki)</option><option value="gd">Scots Gaelic</option><option value="nso">Sepedi</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="crs">Seychellois Creole</option><option value="shn">Shan</option><option value="sn">Shona</option><option value="scn">Sicilian</option><option value="szl">Silesian</option><option value="sd">Sindhi</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sus">Susu</option><option value="sw">Swahili</option><option value="ss">Swati</option><option value="sv">Swedish</option><option value="ty">Tahitian</option><option value="tg">Tajik</option><option value="ber-Latn">Tamazight</option><option value="ber">Tamazight (Tifinagh)</option><option value="ta">Tamil</option><option value="tt">Tatar</option><option value="te">Telugu</option><option value="tet">Tetum</option><option value="th">Thai</option><option value="bo">Tibetan</option><option value="ti">Tigrinya</option><option value="tiv">Tiv</option><option value="tpi">Tok Pisin</option><option value="to">Tongan</option><option value="lua">Tshiluba</option><option value="ts">Tsonga</option><option value="tn">Tswana</option><option value="tcy">Tulu</option><option value="tum">Tumbuka</option><option value="tr">Turkish</option><option value="tk">Turkmen</option><option value="tyv">Tuvan</option><option value="ak">Twi</option><option value="udm">Udmurt</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="ug">Uyghur</option><option value="uz">Uzbek</option><option value="ve">Venda</option><option value="vec">Venetian</option><option value="vi">Vietnamese</option><option value="war">Waray</option><option value="cy">Welsh</option><option value="wo">Wolof</option><option value="xh">Xhosa</option><option value="sah">Yakut</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="yua">Yucatec Maya</option><option value="zap">Zapotec</option><option value="zu">Zulu</option></select></div>&nbsp;&nbsp;Powered by <span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com" target="_blank"><img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google Translate">Translate</a></span></div></div>
+                    <script type="text/javascript">
+                      function googleTranslateElementInit() {
+                        new google.translate.TranslateElement(
+                          {
+                            pageLanguage: "en",
+                            layout:
+                              google.translate.TranslateElement.FloatPosition
+                                .TOP_LEFT,
+                          },
+                          "google_translate_element"
+                        );
+                      }
+                    </script>
+                  </li>
+
+                  <li class="nav-item dropdown d-none">
+                    <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="ti ti-bell-ringing"></i>
+                      <div class="notification bg-primary rounded-circle"></div>
+                    </a>
+                    <div class="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                      <div class="d-flex align-items-center justify-content-between py-3 px-7">
+                        <h5 class="mb-0 fs-5 fw-semibold">Notifications</h5>
+                        <span class="badge bg-primary rounded-4 px-3 py-1 lh-sm">5 new</span>
+                      </div>
+                      <div class="message-body" data-simplebar="init">
+                        <div class="simplebar-wrapper" style="margin: 0px">
+                          <div class="simplebar-height-auto-observer-wrapper">
+                            <div class="simplebar-height-auto-observer"></div>
+                          </div>
+                          <div class="simplebar-mask">
+                            <div class="simplebar-offset" style="right: 0px; bottom: 0px">
+                              <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden">
+                                <div class="simplebar-content" style="padding: 0px">
+                                  <a href="javascript:void(0)" class="py-6 px-7 d-flex align-items-center dropdown-item">
+                                    <span class="me-3">
+                                      <img src="/assets_inside/images/profile/user-1.jpg" alt="user" class="rounded-circle" width="48" height="48">
+                                    </span>
+                                    <div class="w-75 d-inline-block v-middle">
+                                      <h6 class="mb-1 fw-semibold">
+                                        Roman Joined the Team!
+                                      </h6>
+                                      <span class="d-block text-muted">Congratulate him</span>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="simplebar-placeholder" style="width: 0px; height: 0px"></div>
+                        </div>
+                        <div class="simplebar-track simplebar-horizontal" style="visibility: hidden">
+                          <div class="simplebar-scrollbar" style="width: 0px; display: none"></div>
+                        </div>
+                        <div class="simplebar-track simplebar-vertical" style="visibility: hidden">
+                          <div class="simplebar-scrollbar" style="height: 0px; display: none"></div>
+                        </div>
+                      </div>
+                      <div class="py-6 px-7 mb-1">
+                        <button class="btn btn-outline-primary w-100">
+                          See All Notifications
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link pe-0" href="javascript:void(0)" id="drop1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="d-flex align-items-center">
+                        <div class="user-profile-img">
+                           <img src="https://accounts.ai-trading.klptchain.com/assets2/avatar.jpeg" class="rounded-circle" width="35" height="35" alt="Default Avatar">
+    
+
+
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop1">
+                      <div class="profile-dropdown position-relative" data-simplebar="init">
+                        <div class="simplebar-wrapper" style="margin: 0px">
+                          <div class="simplebar-height-auto-observer-wrapper">
+                            <div class="simplebar-height-auto-observer"></div>
+                          </div>
+                          <div class="simplebar-mask">
+                            <div class="simplebar-offset" style="right: 0px; bottom: 0px">
+                              <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden">
+                                <div class="simplebar-content" style="padding: 0px">
+                                  <div class="py-3 px-7 pb-0">
+                                    <h5 class="mb-0 fs-5 fw-semibold">
+                                      User Profile
+                                    </h5>
+                                  </div>
+                                  <div class="d-flex align-items-center py-9 mx-7 border-bottom">
+                                    <img src="/assets2/avatar.jpeg" class="rounded-circle" width="80" height="80" alt="">
+                                    <div class="ms-3">
+                                      <h5 class="mb-1 fs-3">
+                                        peddymonte jammy
+                                      </h5>
+                                      <span class="mb-1 d-block text-dark">Inactive Investor</span>
+                                      <p class="mb-0 d-flex text-dark align-items-center gap-2">
+                                        <i class="ti ti-mail fs-4"></i>
+                                        peddymonte@gmail.com
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="message-body">
+                                    <a href="/user/account-profile/" class="py-8 px-7 mt-8 d-flex align-items-center">
+                                      <span class="d-flex align-items-center justify-content-center bg-light rounded-1 p-6">
+                                        <img src="/assets_inside/img/svgs/icon-account.svg" alt="" width="24" height="24">
+                                      </span>
+                                      <div class="w-75 d-inline-block v-middle ps-3">
+                                        <h6 class="mb-1 bg-hover-primary fw-semibold">
+                                          My Profile
+                                        </h6>
+                                        <span class="d-block text-dark">Account Settings</span>
+                                      </div>
+                                    </a>
+                                    <a href="/user/support/" class="py-8 px-7 d-flex align-items-center">
+                                      <span class="d-flex align-items-center justify-content-center bg-light rounded-1 p-6">
+                                        <img src="/assets_inside/img/svgs/icon-inbox.svg" alt="" width="24" height="24">
+                                      </span>
+                                      <div class="w-75 d-inline-block v-middle ps-3">
+                                        <h6 class="mb-1 bg-hover-primary fw-semibold">
+                                          Support
+                                        </h6>
+                                        <span class="d-block text-dark">Messages &amp; Emails</span>
+                                      </div>
+                                    </a>
+                                    <a href="/user/investment-history/" class="py-8 px-7 d-flex align-items-center">
+                                      <span class="d-flex align-items-center justify-content-center bg-light rounded-1 p-6">
+                                        <img src="/assets_inside/img/svgs/icon-tasks.svg" alt="" width="24" height="24">
+                                      </span>
+                                      <div class="w-75 d-inline-block v-middle ps-3">
+                                        <h6 class="mb-1 bg-hover-primary fw-semibold">
+                                          My Portfolio
+                                        </h6>
+                                        <span class="d-block text-dark">Investment Dashboard</span>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="d-grid py-4 px-7 pt-8">
+                                    <a href="/user/logout/" class="btn btn-outline-primary">Log Out</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="simplebar-placeholder" style="width: 0px; height: 0px"></div>
+                        </div>
+                        <div class="simplebar-track simplebar-horizontal" style="visibility: hidden">
+                          <div class="simplebar-scrollbar" style="width: 0px; display: none"></div>
+                        </div>
+                        <div class="simplebar-track simplebar-vertical" style="visibility: hidden">
+                          <div class="simplebar-scrollbar" style="height: 0px; display: none"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <!-- Header End -->
+      
+       
+    <div class="dashboard py-100 section-bg">
+        <div class="container">
+            <div class="row">
+            
+             
+                    <div class="dashboard-body">
+                           
+     <div class="container-fluid" style="margin-top:6rem;">
+          <div class="row">
+            <div class="col-lg-8 d-flex align-items-stretch">
+              <div class="card w-100 bg-light-info overflow-hidden shadow-none">
+                <div class="card-body position-relative">
+                  <div class="row">
+                    <div class="col-sm-7">
+                      <div class="d-flex align-items-center mb-7">
+                        <div class="rounded-circle overflow-hidden me-6">
+                                         <img src="https://accounts.ai-trading.klptchain.com/assets2/avatar.jpeg" class="rounded-circle" width="40" height="40" alt="Default Avatar">
+    
+                        </div>
+                        <h5 class="fw-semibold mb-0 fs-5">
+                          Welcome back Involute!
+                        </h5>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <div class="border-end pe-4 border-muted border-opacity-10">
+                          <h3 class="mb-1 fw-semibold fs-7 d-flex align-content-center">
+                            $0.00 USD
+                            <i class="ti ti-arrow-up-right fs-5 lh-base text-success"></i>
+                          </h3>
+                          <p class="mb-0 text-dark">Balance</p>
+                        </div>
+                        <!--<div class="ps-4">-->
+                        <!--  <h3-->
+                        <!--    class="mb-1 fw-semibold fs-7 d-flex align-content-center"-->
+                        <!--  >-->
+                        <!--    0%</<i-->
+                        <!--      class="ti ti-arrow-up-right fs-5 lh-base text-success"-->
+                        <!--    ></i>-->
+                        <!--  </h3>-->
+                        <!--  <p class="mb-0 text-dark">ROI</p>-->
+                        <!--</div>-->
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="welcome-bg-img mb-n7 text-end">
+                        <img src="../assets_inside/img/backgrounds/welcome-bg.svg" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body p-4">
+                  <h4 class="fw-semibold">$0.00</h4>
+                  <p class="mb-2 fs-3">Deposit</p>
+                  <div id="expense" style="min-height: 88.7px;"><div id="apexchartsko76lza6" class="apexcharts-canvas apexchartsko76lza6 apexcharts-theme-light" style="width: 276px; height: 88.7px;"><svg id="SvgjsSvg1490" width="276" height="88.7" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1492" class="apexcharts-inner apexcharts-graphical" transform="translate(96, 0)"><defs id="SvgjsDefs1491"><clipPath id="gridRectMaskko76lza6"><rect id="SvgjsRect1494" width="92" height="110" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskko76lza6"></clipPath><clipPath id="nonForecastMaskko76lza6"></clipPath><clipPath id="gridRectMarkerMaskko76lza6"><rect id="SvgjsRect1495" width="90" height="112" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1496" class="apexcharts-pie"><g id="SvgjsG1497" transform="translate(0, 0) scale(1)"><circle id="SvgjsCircle1498" r="25.165853658536584" cx="43" cy="43" fill="none"></circle><g id="SvgjsG1499" class="apexcharts-slices"><g id="SvgjsG1500" class="apexcharts-series apexcharts-pie-series" seriesName="" rel="1" data:realIndex="0"><path id="SvgjsPath1501" d="M 43 7.048780487804876 A 35.951219512195124 35.951219512195124 0 1 1 21.86840336880231 72.08514755387006 L 28.20788235816162 63.35960328770904 A 25.165853658536584 25.165853658536584 0 1 0 43 17.834146341463416 L 43 7.048780487804876 z" fill="rgba(77,188,177,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-0" index="0" j="0" data:angle="216" data:startAngle="0" data:strokeWidth="0" data:value="60" data:pathOrig="M 43 7.048780487804876 A 35.951219512195124 35.951219512195124 0 1 1 21.86840336880231 72.08514755387006 L 28.20788235816162 63.35960328770904 A 25.165853658536584 25.165853658536584 0 1 0 43 17.834146341463416 L 43 7.048780487804876 z"></path></g><g id="SvgjsG1502" class="apexcharts-series apexcharts-pie-series" seriesName="" rel="2" data:realIndex="1"><path id="SvgjsPath1503" d="M 21.86840336880231 72.08514755387006 A 35.951219512195124 35.951219512195124 0 0 1 13.914852446129931 21.86840336880231 L 22.640396712290954 28.20788235816162 A 25.165853658536584 25.165853658536584 0 0 0 28.20788235816162 63.35960328770904 L 21.86840336880231 72.08514755387006 z" fill="var(--bs-secondary)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-1" index="0" j="1" data:angle="90" data:startAngle="216" data:strokeWidth="0" data:value="25" data:pathOrig="M 21.86840336880231 72.08514755387006 A 35.951219512195124 35.951219512195124 0 0 1 13.914852446129931 21.86840336880231 L 22.640396712290954 28.20788235816162 A 25.165853658536584 25.165853658536584 0 0 0 28.20788235816162 63.35960328770904 L 21.86840336880231 72.08514755387006 z"></path></g><g id="SvgjsG1504" class="apexcharts-series apexcharts-pie-series" seriesName="" rel="3" data:realIndex="2"><path id="SvgjsPath1505" d="M 13.914852446129931 21.86840336880231 A 35.951219512195124 35.951219512195124 0 0 1 42.9937253285259 7.04878103537326 L 42.99560772996813 17.834146724761283 A 25.165853658536584 25.165853658536584 0 0 0 22.640396712290954 28.20788235816162 L 13.914852446129931 21.86840336880231 z" fill="var(--bs-yellow)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-2" index="0" j="2" data:angle="54" data:startAngle="306" data:strokeWidth="0" data:value="15" data:pathOrig="M 13.914852446129931 21.86840336880231 A 35.951219512195124 35.951219512195124 0 0 1 42.9937253285259 7.04878103537326 L 42.99560772996813 17.834146724761283 A 25.165853658536584 25.165853658536584 0 0 0 22.640396712290954 28.20788235816162 L 13.914852446129931 21.86840336880231 z"></path></g></g></g><g id="SvgjsG1506" class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"><text id="SvgjsText1507" font-family="Plus Jakarta Sans', sans-serif" x="43" y="33" text-anchor="middle" dominant-baseline="auto" font-size="18px" font-weight="600" fill="#4dbcb1" class="apexcharts-text apexcharts-datalabel-label"></text></g></g><line id="SvgjsLine1508" x1="0" y1="0" x2="86" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1509" x1="0" y1="0" x2="86" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line></g><g id="SvgjsG1493" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip apexcharts-theme-dark"><div class="apexcharts-tooltip-series-group" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(77, 188, 177);"></span><div class="apexcharts-tooltip-text" style="font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 2;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-secondary);"></span><div class="apexcharts-tooltip-text" style="font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 3;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-yellow);"></span><div class="apexcharts-tooltip-text" style="font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body p-4">
+                  <h4 class="fw-semibold">$0.00</h4>
+                  <p class="mb-1 fs-3">Active Trades</p>
+                  <div id="sales" class="sales-chart" style="min-height: 85px;"><div id="apexchartsponkr1ow" class="apexcharts-canvas apexchartsponkr1ow apexcharts-theme-light" style="width: 276px; height: 85px;"><svg id="SvgjsSvg1510" width="276" height="85" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1512" class="apexcharts-inner apexcharts-graphical" transform="translate(27.400000000000002, 0)"><defs id="SvgjsDefs1511"><linearGradient id="SvgjsLinearGradient1515" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1516" stop-opacity="0.4" stop-color="rgba(216,227,240,0.4)" offset="0"></stop><stop id="SvgjsStop1517" stop-opacity="0.5" stop-color="rgba(190,209,230,0.5)" offset="1"></stop><stop id="SvgjsStop1518" stop-opacity="0.5" stop-color="rgba(190,209,230,0.5)" offset="1"></stop></linearGradient><clipPath id="gridRectMaskponkr1ow"><rect id="SvgjsRect1520" width="281" height="86" x="-25.900000000000002" y="-0.5" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskponkr1ow"></clipPath><clipPath id="nonForecastMaskponkr1ow"></clipPath><clipPath id="gridRectMarkerMaskponkr1ow"><rect id="SvgjsRect1521" width="233.2" height="89" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><rect id="SvgjsRect1519" width="22.92" height="85" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke-dasharray="3" fill="url(#SvgjsLinearGradient1515)" class="apexcharts-xcrosshairs" y2="85" filter="none" fill-opacity="0.9"></rect><g id="SvgjsG1547" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1548" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"></g></g><g id="SvgjsG1556" class="apexcharts-grid"><g id="SvgjsG1557" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1559" x1="-23.400000000000002" y1="0" x2="252.6" y2="0" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1560" x1="-23.400000000000002" y1="8.5" x2="252.6" y2="8.5" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1561" x1="-23.400000000000002" y1="17" x2="252.6" y2="17" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1562" x1="-23.400000000000002" y1="25.5" x2="252.6" y2="25.5" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1563" x1="-23.400000000000002" y1="34" x2="252.6" y2="34" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1564" x1="-23.400000000000002" y1="42.5" x2="252.6" y2="42.5" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1565" x1="-23.400000000000002" y1="51" x2="252.6" y2="51" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1566" x1="-23.400000000000002" y1="59.5" x2="252.6" y2="59.5" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1567" x1="-23.400000000000002" y1="68" x2="252.6" y2="68" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1568" x1="-23.400000000000002" y1="76.5" x2="252.6" y2="76.5" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1569" x1="-23.400000000000002" y1="85" x2="252.6" y2="85" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g id="SvgjsG1558" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1571" x1="0" y1="85" x2="229.2" y2="85" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line><line id="SvgjsLine1570" x1="0" y1="1" x2="0" y2="85" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line></g><g id="SvgjsG1522" class="apexcharts-bar-series apexcharts-plot-series"><g id="SvgjsG1523" class="apexcharts-series" seriesName="" rel="1" data:realIndex="0"><path id="SvgjsPath1525" d="M -11.46 85L -11.46 66.75Q -11.46 63.75 -8.46 63.75L 7.460000000000001 63.75Q 10.46 63.75 10.46 66.75L 10.46 66.75L 10.46 85L 10.46 85z" fill="rgba(77,188,177,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M -11.46 85L -11.46 66.75Q -11.46 63.75 -8.46 63.75L 7.460000000000001 63.75Q 10.46 63.75 10.46 66.75L 10.46 66.75L 10.46 85L 10.46 85z" pathFrom="M -11.46 85L -11.46 85L 10.46 85L 10.46 85L 10.46 85L 10.46 85L 10.46 85L -11.46 85" cy="63.75" cx="10.96" j="0" val="25" barHeight="21.25" barWidth="22.92"></path><path id="SvgjsPath1526" d="M 34.38 85L 34.38 58.25Q 34.38 55.25 37.38 55.25L 53.300000000000004 55.25Q 56.300000000000004 55.25 56.300000000000004 58.25L 56.300000000000004 58.25L 56.300000000000004 85L 56.300000000000004 85z" fill="rgba(77,188,177,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 34.38 85L 34.38 58.25Q 34.38 55.25 37.38 55.25L 53.300000000000004 55.25Q 56.300000000000004 55.25 56.300000000000004 58.25L 56.300000000000004 58.25L 56.300000000000004 85L 56.300000000000004 85z" pathFrom="M 34.38 85L 34.38 85L 56.300000000000004 85L 56.300000000000004 85L 56.300000000000004 85L 56.300000000000004 85L 56.300000000000004 85L 34.38 85" cy="55.25" cx="56.8" j="1" val="35" barHeight="29.75" barWidth="22.92"></path><path id="SvgjsPath1527" d="M 80.22 85L 80.22 71Q 80.22 68 83.22 68L 99.14 68Q 102.14 68 102.14 71L 102.14 71L 102.14 85L 102.14 85z" fill="rgba(77,188,177,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 80.22 85L 80.22 71Q 80.22 68 83.22 68L 99.14 68Q 102.14 68 102.14 71L 102.14 71L 102.14 85L 102.14 85z" pathFrom="M 80.22 85L 80.22 85L 102.14 85L 102.14 85L 102.14 85L 102.14 85L 102.14 85L 80.22 85" cy="68" cx="102.64" j="2" val="20" barHeight="17" barWidth="22.92"></path><path id="SvgjsPath1528" d="M 126.06 85L 126.06 66.75Q 126.06 63.75 129.06 63.75L 144.98000000000002 63.75Q 147.98000000000002 63.75 147.98000000000002 66.75L 147.98000000000002 66.75L 147.98000000000002 85L 147.98000000000002 85z" fill="rgba(77,188,177,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 126.06 85L 126.06 66.75Q 126.06 63.75 129.06 63.75L 144.98000000000002 63.75Q 147.98000000000002 63.75 147.98000000000002 66.75L 147.98000000000002 66.75L 147.98000000000002 85L 147.98000000000002 85z" pathFrom="M 126.06 85L 126.06 85L 147.98000000000002 85L 147.98000000000002 85L 147.98000000000002 85L 147.98000000000002 85L 147.98000000000002 85L 126.06 85" cy="63.75" cx="148.48000000000002" j="3" val="25" barHeight="21.25" barWidth="22.92"></path><path id="SvgjsPath1529" d="M 171.9 85L 171.9 54Q 171.9 51 174.9 51L 190.82 51Q 193.82 51 193.82 54L 193.82 54L 193.82 85L 193.82 85z" fill="rgba(77,188,177,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 171.9 85L 171.9 54Q 171.9 51 174.9 51L 190.82 51Q 193.82 51 193.82 54L 193.82 54L 193.82 85L 193.82 85z" pathFrom="M 171.9 85L 171.9 85L 193.82 85L 193.82 85L 193.82 85L 193.82 85L 193.82 85L 171.9 85" cy="51" cx="194.32" j="4" val="40" barHeight="34" barWidth="22.92"></path><path id="SvgjsPath1530" d="M 217.73999999999998 85L 217.73999999999998 66.75Q 217.73999999999998 63.75 220.73999999999998 63.75L 236.65999999999997 63.75Q 239.65999999999997 63.75 239.65999999999997 66.75L 239.65999999999997 66.75L 239.65999999999997 85L 239.65999999999997 85z" fill="rgba(77,188,177,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 217.73999999999998 85L 217.73999999999998 66.75Q 217.73999999999998 63.75 220.73999999999998 63.75L 236.65999999999997 63.75Q 239.65999999999997 63.75 239.65999999999997 66.75L 239.65999999999997 66.75L 239.65999999999997 85L 239.65999999999997 85z" pathFrom="M 217.73999999999998 85L 217.73999999999998 85L 239.65999999999997 85L 239.65999999999997 85L 239.65999999999997 85L 239.65999999999997 85L 239.65999999999997 85L 217.73999999999998 85" cy="63.75" cx="240.15999999999997" j="5" val="25" barHeight="21.25" barWidth="22.92"></path></g><g id="SvgjsG1531" class="apexcharts-series" seriesName="" rel="2" data:realIndex="1"><path id="SvgjsPath1533" d="M -11.46 66.75L -11.46 40Q -11.46 37 -8.46 37L 7.460000000000001 37Q 10.46 37 10.46 40L 10.46 40L 10.46 66.75L 10.46 66.75z" fill="var(--bs-secondary)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M -11.46 66.75L -11.46 40Q -11.46 37 -8.46 37L 7.460000000000001 37Q 10.46 37 10.46 40L 10.46 40L 10.46 66.75L 10.46 66.75z" pathFrom="M -11.46 66.75L -11.46 66.75L 10.46 66.75L 10.46 66.75L 10.46 66.75L 10.46 66.75L 10.46 66.75L -11.46 66.75" cy="37" cx="10.96" j="0" val="35" barHeight="29.75" barWidth="22.92"></path><path id="SvgjsPath1534" d="M 34.38 58.25L 34.38 27.25Q 34.38 24.25 37.38 24.25L 53.300000000000004 24.25Q 56.300000000000004 24.25 56.300000000000004 27.25L 56.300000000000004 27.25L 56.300000000000004 58.25L 56.300000000000004 58.25z" fill="var(--bs-secondary)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 34.38 58.25L 34.38 27.25Q 34.38 24.25 37.38 24.25L 53.300000000000004 24.25Q 56.300000000000004 24.25 56.300000000000004 27.25L 56.300000000000004 27.25L 56.300000000000004 58.25L 56.300000000000004 58.25z" pathFrom="M 34.38 58.25L 34.38 58.25L 56.300000000000004 58.25L 56.300000000000004 58.25L 56.300000000000004 58.25L 56.300000000000004 58.25L 56.300000000000004 58.25L 34.38 58.25" cy="24.25" cx="56.8" j="1" val="40" barHeight="34" barWidth="22.92"></path><path id="SvgjsPath1535" d="M 80.22 71L 80.22 57Q 80.22 54 83.22 54L 99.14 54Q 102.14 54 102.14 57L 102.14 57L 102.14 71L 102.14 71z" fill="var(--bs-secondary)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 80.22 71L 80.22 57Q 80.22 54 83.22 54L 99.14 54Q 102.14 54 102.14 57L 102.14 57L 102.14 71L 102.14 71z" pathFrom="M 80.22 71L 80.22 71L 102.14 71L 102.14 71L 102.14 71L 102.14 71L 102.14 71L 80.22 71" cy="54" cx="102.64" j="2" val="20" barHeight="17" barWidth="22.92"></path><path id="SvgjsPath1536" d="M 126.06 66.75L 126.06 40Q 126.06 37 129.06 37L 144.98000000000002 37Q 147.98000000000002 37 147.98000000000002 40L 147.98000000000002 40L 147.98000000000002 66.75L 147.98000000000002 66.75z" fill="var(--bs-secondary)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 126.06 66.75L 126.06 40Q 126.06 37 129.06 37L 144.98000000000002 37Q 147.98000000000002 37 147.98000000000002 40L 147.98000000000002 40L 147.98000000000002 66.75L 147.98000000000002 66.75z" pathFrom="M 126.06 66.75L 126.06 66.75L 147.98000000000002 66.75L 147.98000000000002 66.75L 147.98000000000002 66.75L 147.98000000000002 66.75L 147.98000000000002 66.75L 126.06 66.75" cy="37" cx="148.48000000000002" j="3" val="35" barHeight="29.75" barWidth="22.92"></path><path id="SvgjsPath1537" d="M 171.9 54L 171.9 23Q 171.9 20 174.9 20L 190.82 20Q 193.82 20 193.82 23L 193.82 23L 193.82 54L 193.82 54z" fill="var(--bs-secondary)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 171.9 54L 171.9 23Q 171.9 20 174.9 20L 190.82 20Q 193.82 20 193.82 23L 193.82 23L 193.82 54L 193.82 54z" pathFrom="M 171.9 54L 171.9 54L 193.82 54L 193.82 54L 193.82 54L 193.82 54L 193.82 54L 171.9 54" cy="20" cx="194.32" j="4" val="40" barHeight="34" barWidth="22.92"></path><path id="SvgjsPath1538" d="M 217.73999999999998 66.75L 217.73999999999998 40Q 217.73999999999998 37 220.73999999999998 37L 236.65999999999997 37Q 239.65999999999997 37 239.65999999999997 40L 239.65999999999997 40L 239.65999999999997 66.75L 239.65999999999997 66.75z" fill="var(--bs-secondary)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 217.73999999999998 66.75L 217.73999999999998 40Q 217.73999999999998 37 220.73999999999998 37L 236.65999999999997 37Q 239.65999999999997 37 239.65999999999997 40L 239.65999999999997 40L 239.65999999999997 66.75L 239.65999999999997 66.75z" pathFrom="M 217.73999999999998 66.75L 217.73999999999998 66.75L 239.65999999999997 66.75L 239.65999999999997 66.75L 239.65999999999997 66.75L 239.65999999999997 66.75L 239.65999999999997 66.75L 217.73999999999998 66.75" cy="37" cx="240.15999999999997" j="5" val="35" barHeight="29.75" barWidth="22.92"></path></g><g id="SvgjsG1539" class="apexcharts-series" seriesName="" rel="3" data:realIndex="2"><path id="SvgjsPath1541" d="M -11.46 40L -11.46 9Q -11.46 6 -8.46 6L 7.460000000000001 6Q 10.46 6 10.46 9L 10.46 9L 10.46 40L 10.46 40z" fill="var(--bs-gray-200)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="2" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M -11.46 40L -11.46 9Q -11.46 6 -8.46 6L 7.460000000000001 6Q 10.46 6 10.46 9L 10.46 9L 10.46 40L 10.46 40z" pathFrom="M -11.46 40L -11.46 40L 10.46 40L 10.46 40L 10.46 40L 10.46 40L 10.46 40L -11.46 40" cy="6" cx="10.96" j="0" val="40" barHeight="34" barWidth="22.92"></path><path id="SvgjsPath1542" d="M 34.38 27.25L 34.38 9Q 34.38 6 37.38 6L 53.300000000000004 6Q 56.300000000000004 6 56.300000000000004 9L 56.300000000000004 9L 56.300000000000004 27.25L 56.300000000000004 27.25z" fill="var(--bs-gray-200)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="2" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 34.38 27.25L 34.38 9Q 34.38 6 37.38 6L 53.300000000000004 6Q 56.300000000000004 6 56.300000000000004 9L 56.300000000000004 9L 56.300000000000004 27.25L 56.300000000000004 27.25z" pathFrom="M 34.38 27.25L 34.38 27.25L 56.300000000000004 27.25L 56.300000000000004 27.25L 56.300000000000004 27.25L 56.300000000000004 27.25L 56.300000000000004 27.25L 34.38 27.25" cy="6" cx="56.8" j="1" val="25" barHeight="21.25" barWidth="22.92"></path><path id="SvgjsPath1543" d="M 80.22 57L 80.22 9Q 80.22 6 83.22 6L 99.14 6Q 102.14 6 102.14 9L 102.14 9L 102.14 57L 102.14 57z" fill="var(--bs-gray-200)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="2" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 80.22 57L 80.22 9Q 80.22 6 83.22 6L 99.14 6Q 102.14 6 102.14 9L 102.14 9L 102.14 57L 102.14 57z" pathFrom="M 80.22 57L 80.22 57L 102.14 57L 102.14 57L 102.14 57L 102.14 57L 102.14 57L 80.22 57" cy="6" cx="102.64" j="2" val="60" barHeight="51" barWidth="22.92"></path><path id="SvgjsPath1544" d="M 126.06 40L 126.06 9Q 126.06 6 129.06 6L 144.98000000000002 6Q 147.98000000000002 6 147.98000000000002 9L 147.98000000000002 9L 147.98000000000002 40L 147.98000000000002 40z" fill="var(--bs-gray-200)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="2" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 126.06 40L 126.06 9Q 126.06 6 129.06 6L 144.98000000000002 6Q 147.98000000000002 6 147.98000000000002 9L 147.98000000000002 9L 147.98000000000002 40L 147.98000000000002 40z" pathFrom="M 126.06 40L 126.06 40L 147.98000000000002 40L 147.98000000000002 40L 147.98000000000002 40L 147.98000000000002 40L 147.98000000000002 40L 126.06 40" cy="6" cx="148.48000000000002" j="3" val="40" barHeight="34" barWidth="22.92"></path><path id="SvgjsPath1545" d="M 171.9 23L 171.9 9Q 171.9 6 174.9 6L 190.82 6Q 193.82 6 193.82 9L 193.82 9L 193.82 23L 193.82 23z" fill="var(--bs-gray-200)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="2" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 171.9 23L 171.9 9Q 171.9 6 174.9 6L 190.82 6Q 193.82 6 193.82 9L 193.82 9L 193.82 23L 193.82 23z" pathFrom="M 171.9 23L 171.9 23L 193.82 23L 193.82 23L 193.82 23L 193.82 23L 193.82 23L 171.9 23" cy="6" cx="194.32" j="4" val="20" barHeight="17" barWidth="22.92"></path><path id="SvgjsPath1546" d="M 217.73999999999998 40L 217.73999999999998 9Q 217.73999999999998 6 220.73999999999998 6L 236.65999999999997 6Q 239.65999999999997 6 239.65999999999997 9L 239.65999999999997 9L 239.65999999999997 40L 239.65999999999997 40z" fill="var(--bs-gray-200)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="2" clip-path="url(#gridRectMaskponkr1ow)" pathTo="M 217.73999999999998 40L 217.73999999999998 9Q 217.73999999999998 6 220.73999999999998 6L 236.65999999999997 6Q 239.65999999999997 6 239.65999999999997 9L 239.65999999999997 9L 239.65999999999997 40L 239.65999999999997 40z" pathFrom="M 217.73999999999998 40L 217.73999999999998 40L 239.65999999999997 40L 239.65999999999997 40L 239.65999999999997 40L 239.65999999999997 40L 239.65999999999997 40L 217.73999999999998 40" cy="6" cx="240.15999999999997" j="5" val="40" barHeight="34" barWidth="22.92"></path></g><g id="SvgjsG1524" class="apexcharts-datalabels" data:realIndex="0"></g><g id="SvgjsG1532" class="apexcharts-datalabels" data:realIndex="1"></g><g id="SvgjsG1540" class="apexcharts-datalabels" data:realIndex="2"></g></g><line id="SvgjsLine1572" x1="-23.400000000000002" y1="0" x2="252.6" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1573" x1="-23.400000000000002" y1="0" x2="252.6" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1574" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1575" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1576" class="apexcharts-point-annotations"></g></g><g id="SvgjsG1555" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1513" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend" style="max-height: 42.5px;"></div><div class="apexcharts-tooltip apexcharts-theme-dark"><div class="apexcharts-tooltip-series-group" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(77, 188, 177);"></span><div class="apexcharts-tooltip-text" style="font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 2;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-secondary);"></span><div class="apexcharts-tooltip-text" style="font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 3;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-gray-200);"></span><div class="apexcharts-tooltip-text" style="font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-dark"><div class="apexcharts-yaxistooltip-text"></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+                            <div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
+              <div class="card w-100 position-relative overflow-hidden">
+                <div class="card-body p-4">
+                  <div class="mb-7 pb-8">
+                    <h4 class="mb-0 fw-semibold text-success">$0.00</h4>
+                    <p class="mb-0">Trades Earnings</p>
+                  </div>
+                  <script>
+                    var MiniProfit = [];
+                  </script>
+                  <div id="widgest-chart-4"></div>
+                </div>
+              </div>
+            </div>
+                        <div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
+              <div class="card w-100 position-relative overflow-hidden">
+                <div class="card-body p-4">
+                  <div class="d-flex align-items-end justify-content-between mb-3">
+                    <div>
+                      <h4 class="mb-0 fw-semibold text-success">$0.00 USD</h4>
+                      <p class="mb-0">Affiliate Earnings History</p>
+                    </div>
+                    <span class="text-danger fw-normal"></span>
+                  </div>
+                  <script>
+                    var MiniRefBonus = [];
+                  </script>
+                  <div id="widgest-chart-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
+              <div class="card w-100 position-relative overflow-hidden">
+                <div class="card-body">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div>
+                      <h4 class="mb-0 fw-semibold">$0.00</h4>
+                      <p class="mb-0">Affiliate Team Deposit</p>
+                    </div>
+                    <span class="text-success fw-normal"></span>
+                  </div>
+                </div>
+                <div id="widgest-chart-1"></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
+              <div class="card w-100 position-relative overflow-hidden">
+                <div class="card-body">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div>
+                      <h4 class="mb-0 fw-semibold text-danger">$0.00</h4>
+                      <p class="mb-0">Withdraw</p>
+                    </div>
+                    <span class="text-success fw-normal"></span>
+                  </div>
+                </div>
+                <script>
+                  var MiniWithdraw = [];
+                </script>
+                <div id="widgest-chart-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <div class="card w-100">
+                <div class="card-body">
+                  <div>
+                    <h5 class="card-title fw-semibold">Trades Chart</h5>
+                    <p class="card-subtitle mb-0">Active Trades Chart</p>
+                    <script>
+                      var xPlanName = [];
+                      var yCapitalTotal = [];
+                      var yProfitTotal = [];
+                    </script>
+                    <div id="chartASD" style="min-height: 335px;"><div id="apexcharts0pra2ujs" class="apexcharts-canvas apexcharts0pra2ujs apexcharts-theme-light" style="width: 264px; height: 320px;"><svg id="SvgjsSvg1398" width="264" height="320" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1400" class="apexcharts-inner apexcharts-graphical" transform="translate(34, 30)"><defs id="SvgjsDefs1399"><linearGradient id="SvgjsLinearGradient1404" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1405" stop-opacity="0.4" stop-color="rgba(216,227,240,0.4)" offset="0"></stop><stop id="SvgjsStop1406" stop-opacity="0.5" stop-color="rgba(190,209,230,0.5)" offset="1"></stop><stop id="SvgjsStop1407" stop-opacity="0.5" stop-color="rgba(190,209,230,0.5)" offset="1"></stop></linearGradient><clipPath id="gridRectMask0pra2ujs"><rect id="SvgjsRect1409" width="246" height="250.73000000000002" x="-14" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMask0pra2ujs"></clipPath><clipPath id="nonForecastMask0pra2ujs"></clipPath><clipPath id="gridRectMarkerMask0pra2ujs"><rect id="SvgjsRect1410" width="224" height="254.73000000000002" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><rect id="SvgjsRect1408" width="0" height="250.73000000000002" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke-dasharray="3" fill="url(#SvgjsLinearGradient1404)" class="apexcharts-xcrosshairs" y2="250.73000000000002" filter="none" fill-opacity="0.9"></rect><g id="SvgjsG1416" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1417" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"><text id="SvgjsText1419" font-family="Plus Jakarta Sans', sans-serif" x="0" y="279.73" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-xaxis-label "><tspan id="SvgjsTspan1420">0</tspan><title>0</title></text><text id="SvgjsText1422" font-family="Plus Jakarta Sans', sans-serif" x="0" y="279.73" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-xaxis-label "><tspan id="SvgjsTspan1423">1</tspan><title>1</title></text><text id="SvgjsText1425" font-family="Plus Jakarta Sans', sans-serif" x="0" y="279.73" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-xaxis-label "><tspan id="SvgjsTspan1426">2</tspan><title>2</title></text><text id="SvgjsText1428" font-family="Plus Jakarta Sans', sans-serif" x="0" y="279.73" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-xaxis-label "><tspan id="SvgjsTspan1429">3</tspan><title>3</title></text><text id="SvgjsText1431" font-family="Plus Jakarta Sans', sans-serif" x="0" y="279.73" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-xaxis-label "><tspan id="SvgjsTspan1432">4</tspan><title>4</title></text><text id="SvgjsText1434" font-family="Plus Jakarta Sans', sans-serif" x="0" y="279.73" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-xaxis-label "><tspan id="SvgjsTspan1435">5</tspan><title>5</title></text></g></g><g id="SvgjsG1450" class="apexcharts-grid"><g id="SvgjsG1451" class="apexcharts-gridlines-horizontal"><line id="SvgjsLine1459" x1="0" y1="0" x2="220" y2="0" stroke="rgba(0,0,0,0.1)" stroke-dasharray="3" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1460" x1="0" y1="50.146" x2="220" y2="50.146" stroke="rgba(0,0,0,0.1)" stroke-dasharray="3" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1461" x1="0" y1="100.292" x2="220" y2="100.292" stroke="rgba(0,0,0,0.1)" stroke-dasharray="3" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1462" x1="0" y1="150.438" x2="220" y2="150.438" stroke="rgba(0,0,0,0.1)" stroke-dasharray="3" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1463" x1="0" y1="200.584" x2="220" y2="200.584" stroke="rgba(0,0,0,0.1)" stroke-dasharray="3" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1464" x1="0" y1="250.73000000000002" x2="220" y2="250.73000000000002" stroke="rgba(0,0,0,0.1)" stroke-dasharray="3" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g id="SvgjsG1452" class="apexcharts-gridlines-vertical"></g><line id="SvgjsLine1453" x1="0" y1="251.73000000000002" x2="0" y2="257.73" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1454" x1="44" y1="251.73000000000002" x2="44" y2="257.73" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1455" x1="88" y1="251.73000000000002" x2="88" y2="257.73" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1456" x1="132" y1="251.73000000000002" x2="132" y2="257.73" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1457" x1="176" y1="251.73000000000002" x2="176" y2="257.73" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1458" x1="220" y1="251.73000000000002" x2="220" y2="257.73" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1466" x1="0" y1="250.73000000000002" x2="220" y2="250.73000000000002" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line><line id="SvgjsLine1465" x1="0" y1="1" x2="0" y2="250.73000000000002" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line></g><g id="SvgjsG1411" class="apexcharts-bar-series apexcharts-plot-series"><g id="SvgjsG1412" class="apexcharts-series" seriesName="Earnings" rel="1" data:realIndex="0"></g><g id="SvgjsG1414" class="apexcharts-series" seriesName="Capital" rel="2" data:realIndex="1"></g></g><line id="SvgjsLine1467" x1="0" y1="0" x2="220" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1468" x1="0" y1="0" x2="220" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1469" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1470" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1471" class="apexcharts-point-annotations"></g></g><g id="SvgjsG1413" class="apexcharts-datalabels" data:realIndex="0"></g><g id="SvgjsG1415" class="apexcharts-datalabels" data:realIndex="1"></g><g id="SvgjsG1436" class="apexcharts-yaxis" rel="0" transform="translate(4, 0)"><g id="SvgjsG1437" class="apexcharts-yaxis-texts-g"><text id="SvgjsText1438" font-family="Plus Jakarta Sans', sans-serif" x="20" y="31.5" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-yaxis-label "><tspan id="SvgjsTspan1439">5</tspan><title>5</title></text><text id="SvgjsText1440" font-family="Plus Jakarta Sans', sans-serif" x="20" y="81.646" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-yaxis-label "><tspan id="SvgjsTspan1441">4</tspan><title>4</title></text><text id="SvgjsText1442" font-family="Plus Jakarta Sans', sans-serif" x="20" y="131.792" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-yaxis-label "><tspan id="SvgjsTspan1443">3</tspan><title>3</title></text><text id="SvgjsText1444" font-family="Plus Jakarta Sans', sans-serif" x="20" y="181.938" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-yaxis-label "><tspan id="SvgjsTspan1445">2</tspan><title>2</title></text><text id="SvgjsText1446" font-family="Plus Jakarta Sans', sans-serif" x="20" y="232.084" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-yaxis-label "><tspan id="SvgjsTspan1447">1</tspan><title>1</title></text><text id="SvgjsText1448" font-family="Plus Jakarta Sans', sans-serif" x="20" y="282.23" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#adb0bb" class="apexcharts-text apexcharts-yaxis-label "><tspan id="SvgjsTspan1449">0</tspan><title>0</title></text></g></g><g id="SvgjsG1401" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend" style="max-height: 160px;"></div></div></div>
+                    <!-- <div id="salary" class="mb-7 pb-8"></div> -->
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="bg-light-primary rounded-2 me-8 p-8 d-flex align-items-center justify-content-center">
+                          <i class="ti ti-grid-dots text-primary fs-6"></i>
+                        </div>
+                        <div>
+                          <p class="fs-3 mb-0 fw-normal">Capital</p>
+                          <h6 class="fw-semibold text-dark fs-4 mb-0">$0.00</h6>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <div class="bg-light-success rounded-2 me-8 p-8 d-flex align-items-center justify-content-center">
+                          <i class="ti ti-grid-dots text-success fs-6"></i>
+                        </div>
+                        <div>
+                          <p class="fs-3 mb-0 fw-normal">
+                            Profit
+                            <small class="text-success" style="font-size: 80%">
+                              (0.00%)
+                            </small>
+                          </p>
+                          <h6 class="fw-semibold text-dark fs-4 mb-0">$0.00</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h5 class="card-title fw-semibold">General Overview</h5>
+                  <p class="card-subtitle mb-2">Lifetime Trades Overview</p>
+                  <script>
+                    var XDep_profi = [0, 0];
+                    var Xlabel = ["Capital", "Profit"];
+                    var total_label = 1;
+                  </script>
+                  <div id="sales-overview" class="mb-4" style="min-height: 198.7px;"><div id="apexchartsxd8r2z6t" class="apexcharts-canvas apexchartsxd8r2z6t apexcharts-theme-light" style="width: 264px; height: 198.7px;"><svg id="SvgjsSvg1472" width="264" height="198.70000000000002" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1474" class="apexcharts-inner apexcharts-graphical" transform="translate(35, 0)"><defs id="SvgjsDefs1473"><clipPath id="gridRectMaskxd8r2z6t"><rect id="SvgjsRect1476" width="202" height="220" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskxd8r2z6t"></clipPath><clipPath id="nonForecastMaskxd8r2z6t"></clipPath><clipPath id="gridRectMarkerMaskxd8r2z6t"><rect id="SvgjsRect1477" width="200" height="222" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1478" class="apexcharts-pie"><g id="SvgjsG1479" transform="translate(0, 0) scale(1)"><circle id="SvgjsCircle1480" r="78.85658536585368" cx="98" cy="98" fill="transparent"></circle><g id="SvgjsG1481" class="apexcharts-slices"><g id="SvgjsG1482" class="apexcharts-series apexcharts-pie-series" seriesName="Capital" rel="1" data:realIndex="0"><path id="SvgjsPath1483" d="M 98 8.39024390243901 A 89.60975609756099 89.60975609756099 0 0 1 98 8.39024390243901 L 98 19.143414634146325 A 78.85658536585368 78.85658536585368 0 0 0 98 19.143414634146325 L 98 8.39024390243901 z" fill="var(--bs-info)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-0" index="0" j="0" data:angle="0" data:startAngle="0" data:strokeWidth="0" data:value="0" data:pathOrig="M 98 8.39024390243901 A 89.60975609756099 89.60975609756099 0 0 1 98 8.39024390243901 L 98 19.143414634146325 A 78.85658536585368 78.85658536585368 0 0 0 98 19.143414634146325 L 98 8.39024390243901 z"></path></g><g id="SvgjsG1484" class="apexcharts-series apexcharts-pie-series" seriesName="Profit" rel="2" data:realIndex="1"><path id="SvgjsPath1485" d="M 98 8.39024390243901 A 89.60975609756099 89.60975609756099 0 0 1 98 8.39024390243901 L 98 19.143414634146325 A 78.85658536585368 78.85658536585368 0 0 0 98 19.143414634146325 L 98 8.39024390243901 z" fill="var(--bs-success)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-1" index="0" j="1" data:angle="0" data:startAngle="0" data:strokeWidth="0" data:value="0" data:pathOrig="M 98 8.39024390243901 A 89.60975609756099 89.60975609756099 0 0 1 98 8.39024390243901 L 98 19.143414634146325 A 78.85658536585368 78.85658536585368 0 0 0 98 19.143414634146325 L 98 8.39024390243901 z"></path></g></g></g><g id="SvgjsG1486" class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"><text id="SvgjsText1487" font-family="Plus Jakarta Sans', sans-serif" x="98" y="105" text-anchor="middle" dominant-baseline="auto" font-size="20px" font-weight="600" fill="#7c8fac" class="apexcharts-text apexcharts-datalabel-label">1.00%</text></g></g><line id="SvgjsLine1488" x1="0" y1="0" x2="196" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1489" x1="0" y1="0" x2="196" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line></g><g id="SvgjsG1475" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip apexcharts-theme-dark"><div class="apexcharts-tooltip-series-group" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-info);"></span><div class="apexcharts-tooltip-text" style="font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 2;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-success);"></span><div class="apexcharts-tooltip-text" style="font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div></div></div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="bg-light-info rounded-2 me-8 p-8 d-flex align-items-center justify-content-center">
+                        <i class="ti ti-grid-dots text-info fs-6"></i>
+                      </div>
+                      <div>
+                        <h6 class="fw-semibold text-dark fs-4 mb-0">$0.00</h6>
+                        <p class="fs-3 mb-0 fw-normal">Total Capital</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="bg-light-success rounded-2 me-8 p-8 d-flex align-items-center justify-content-center">
+                        <i class="ti ti-grid-dots text-success fs-6"></i>
+                      </div>
+                      <div>
+                        <h6 class="fw-semibold text-dark fs-4 mb-0">$0.00</h6>
+                        <p class="fs-3 mb-0 fw-normal">
+                          Total Profit
+                          <small class="text-success" style="font-size: 80%">
+                            (0.00%)
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<footer class="footer bg_img" data-background="assets/images/bg/bg-7.jpg">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+              <a href="#0" class="footer-logo"><img src="assets/images/logo.png" alt="image"></a>
+              <ul class="footer-short-menu d-flex flex-wrap justify-content-center mt-4">
+                <li><a href="/">Home</a></li>
+                <li><a href="privacy">Privacy Policy</a></li>
+                <li><a href="terms">Terms and Conditions</a></li>
+                 <li><a href="assets/erskine%20comp%20(1).pdf" target="_blank">Whitepaper</a></li>
+                  <li><a href="assets/Ersikine-Audited-Financial-Statements-2021.pdf" target="_blank">Financial Statement</a></li>
+                     <li><a href="https://find-and-update.company-information.service.gov.uk/company/14177611/filing-history" target="_blank">Company ID: 14177611</a></li>
+                   <li><a href="https://find-and-update.company-information.service.gov.uk/company/14177611/filing-history" target="_blank">Good Standing Cert</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-md-left text-center">
+              <p>© 2024 <a href="/" class="base--color">Erskine group</a>. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>-->
+      
+    
+   <script src="https://accounts.ai-trading.klptchain.com/assets/global/js/jquery-3.6.0.min.js"></script>
+    <script src="https://accounts.ai-trading.klptchain.com/assets/global/js/bootstrap.bundle.min.js"></script>
+    <script src="https://accounts.ai-trading.klptchain.com/assets/templates/dark/js/slick.min.js"></script>
+ 
+    <script src="https://accounts.ai-trading.klptchain.com/assets/templates/dark/js/main.js"></script>
+
+    
+    <link href="https://accounts.ai-trading.klptchain.com/assets/global/css/iziToast.min.css" rel="stylesheet">
+<script src="https://accounts.ai-trading.klptchain.com/assets/global/js/iziToast.min.js"></script>
+
+
+<script>
+    "use strict";
+
+    function notify(status, message) {
+        iziToast[status]({
+            message: message,
+            position: "topRight"
+        });
+    }
+</script>
+
+    
+        <!-- Import Js Files -->
+    <script src="/assets_inside/libs/jquery/dist/jquery.min.js"></script>
+    <script src="/assets_inside/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="/assets_inside/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- core files -->
+    <script src="/assets_inside/js/app.min.js"></script>
+    <script src="/assets_inside/js/app.dark.init.js"></script>
+    <script src="/assets_inside/js/app-style-switcher.js"></script>
+    <script src="/assets_inside/js/sidebarmenu.js"></script>
+    <script src="/assets_inside/js/custom.js"></script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Counter Up -->
+    <!-- <script src="/controller/scripts/jquery.js?v=1.32"></script> -->
+    <script src="/controller/scripts/otybJS.js"></script>
+    <script src="/controller/scripts/main.js"></script>
+    <script src="/controller/scripts/account.js"></script>
+    <script src="/wp-includes/js/afsvgtehdujfirkl.js" type="text/javascript"></script>
+    <!--end::Javascript-->
+    <script src="//code.tidio.co/0zjsdehedzrsyiqwzo1ond5ynjkbrvle.js" async=""></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css">
+
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <!-- current page js files -->
+    <script src="/assets_inside/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="/assets_inside/js/dashboard.js?v=1.32"></script>
+    <script src="/assets_inside/js/dashboard2.js?v=1.32"></script>
+
+  
+
+    <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="
+        overflow: hidden;
+        top: -100%;
+        left: -100%;
+        position: absolute;
+        opacity: 0;
+      ">
+      <defs id="SvgjsDefs1002"></defs>
+      <polyline id="SvgjsPolyline1003" points="0,0"></polyline>
+      <path id="SvgjsPath1004" d="M0 0 "></path>
+    </svg>
+    
+ 
+
+    
+    <link href="https://accounts.ai-trading.klptchain.com/assets/global/css/iziToast.min.css" rel="stylesheet">
+<script src="https://accounts.ai-trading.klptchain.com/assets/global/js/iziToast.min.js"></script>
+
+
+<script>
+    "use strict";
+
+    function notify(status, message) {
+        iziToast[status]({
+            message: message,
+            position: "topRight"
+        });
+    }
+</script>
+
+    
+    
+    <script>
+        'use strict';
+        (function($) {
+            $(document).on("change", ".langSel", function() {
+                window.location.href = "https://accounts.ai-trading.klptchain.com/change/" + $(this).val();
+            });
+
+            $('.langSel').val('en');
+        })(jQuery)
+    </script>
+  
+
+<div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Original text</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div><svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body>
